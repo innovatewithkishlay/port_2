@@ -111,16 +111,19 @@
           <div class="about-text">
             <h3>Computer Science Student</h3>
             <p>
-              I'm a third-year Computer Science student at Stanford University
-              with a focus on Artificial Intelligence and Web Development. My
-              journey in technology began when I was 15, creating simple games
-              and websites that ignited my passion for coding.
+              I’m a third-year Computer Science and Engineering student at
+              Lovely Professional University with a keen focus on Artificial
+              Intelligence and Machine Learning. My journey began with building
+              basic programs in C++, eventually evolving into developing
+              intelligent ML applications using Python, TensorFlow, and
+              Scikit-learn.
             </p>
             <p>
-              Today, I'm dedicated to leveraging technology to create meaningful
-              solutions that can positively impact people's lives. I believe in
-              continuous learning and pushing the boundaries of what's possible
-              with code.
+              Today, I’m passionate about creating practical AI-driven
+              solutions—ranging from emotion detection to medical diagnosis
+              models. I believe in continuous learning, leveraging real-world
+              projects, and pushing the limits of what's possible through data
+              and code.
             </p>
             <div class="about-info">
               <div class="info-item">
@@ -140,7 +143,12 @@
                 <p>Punjab, Paghwara</p>
               </div>
             </div>
-            <a href="#" class="download-btn" id="resume-download">
+            <a
+              href="Shivam_CV1.pdf"
+              class="download-btn"
+              id="resume-download"
+              download
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="18"
@@ -782,6 +790,7 @@
     </a>
     <script src="herosection-autotype.js"></script>
     <script>
+      // Animate elements on scroll
       const animateElements = () => {
         const elements = document.querySelectorAll(
           ".about-img, .about-text, .project-card, .skill-category h3, .skill-item, .achievement-card, .certificate-card"
@@ -817,17 +826,17 @@
         const track = document.querySelector(".certificates-track");
         const dots = document.querySelectorAll(".slider-dot");
         const cards = document.querySelectorAll(".certificate-card");
+
+        if (!track || cards.length === 0) return;
+
         const cardWidth = cards[0].offsetWidth + 30; // Adding gap
 
         dots.forEach((dot, index) => {
           dot.addEventListener("click", () => {
-            // Update active dot
             document
               .querySelector(".slider-dot.active")
-              .classList.remove("active");
+              ?.classList.remove("active");
             dot.classList.add("active");
-
-            // Move track
             track.style.transform = `translateX(-${cardWidth * index}px)`;
           });
         });
@@ -837,37 +846,46 @@
       const handleBackToTop = () => {
         const backToTopBtn = document.querySelector(".back-to-top");
 
-        if (window.scrollY > 300) {
-          backToTopBtn.classList.add("active");
-        } else {
-          backToTopBtn.classList.remove("active");
+        if (backToTopBtn) {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add("active");
+          } else {
+            backToTopBtn.classList.remove("active");
+          }
         }
       };
 
       // Resume Download
-      document
-        .getElementById("resume-download")
-        .addEventListener("click", function (e) {
-          e.preventDefault();
+      const setupResumeDownload = () => {
+        const downloadBtn = document.getElementById("resume-download");
 
-          // Create a temporary anchor element
-          const link = document.createElement("a");
-          link.href = "Shivam_CV_Updated(1).pdf"; // Replace with actual PDF path
-          link.download = "Your_Resume.pdf"; // Suggested filename
-          document.body.appendChild(link);
-          link.click();
-          document.body.removeChild(link);
-        });
+        if (downloadBtn) {
+          downloadBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const link = document.createElement("a");
+            link.href = "Shivam_CV1.pdf"; // Make sure this file exists in the same folder
+            link.download = "Shivam_CV1.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+        }
+      };
 
       // Mobile Menu Toggle
-      const mobileMenuBtn = document.querySelector(".mobile-menu");
-      mobileMenuBtn.addEventListener("click", function () {
+      const setupMobileMenu = () => {
+        const mobileMenuBtn = document.querySelector(".mobile-menu");
         const navLinks = document.querySelector(".nav-links");
-        navLinks.style.display =
-          navLinks.style.display === "flex" ? "none" : "flex";
-      });
 
-      // Event Listeners
+        if (mobileMenuBtn && navLinks) {
+          mobileMenuBtn.addEventListener("click", function () {
+            navLinks.style.display =
+              navLinks.style.display === "flex" ? "none" : "flex";
+          });
+        }
+      };
+
       window.addEventListener("scroll", () => {
         animateElements();
         animateSkillBars();
@@ -878,6 +896,8 @@
         animateElements();
         animateSkillBars();
         initSlider();
+        setupResumeDownload();
+        setupMobileMenu();
       });
     </script>
   </body>
