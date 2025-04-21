@@ -27,7 +27,6 @@
           <div class="nav-links">
             <a href="#home">Home</a>
             <a href="#about">About</a>
-            <a href="#Education">Education</a>
             <a href="#projects">Projects</a>
             <a href="#skills">Skills</a>
             <a href="#achievements">Achievements</a>
@@ -55,43 +54,49 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-content">
-          <h1>Hi, I'm Shivam sharms</h1>
-          <h2>Software Devloper, AI Engineer</h2>
-          <p>
-            Computer Science student passionate about creating innovative
-            solutions through code. Specializing in web development, machine
-            learning, and mobile applications.
-          </p>
-          <a href="#about" class="hero-btn">Explore My Work</a>
+    <div id="hero-section">
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Hi, I'm Shivam Sharma</h1>
+            <h2
+              id="typewriter"
+              style="
+                font-size: 3rem;
+                color: #333;
+                margin-top: 20px;
+                height: 80px;
+              "
+            ></h2>
+            <!-- Inline CSS for styling -->
+            <a href="#about" class="hero-btn">Explore My Work</a>
+          </div>
+          <div class="hero-img"></div>
         </div>
-        <div class="hero-img"></div>
-      </div>
-      <div class="floating-shapes">
-        <div
-          class="shape circle"
-          style="top: 20%; left: 10%; animation-delay: 0s"
-        ></div>
-        <div
-          class="shape square"
-          style="top: 60%; left: 20%; animation-delay: 5s"
-        ></div>
-        <div
-          class="shape triangle"
-          style="top: 30%; left: 80%; animation-delay: 2s"
-        ></div>
-        <div
-          class="shape circle"
-          style="top: 70%; left: 70%; animation-delay: 7s"
-        ></div>
-        <div
-          class="shape square"
-          style="top: 10%; left: 50%; animation-delay: 3s"
-        ></div>
-      </div>
-    </section>
+        <div class="floating-shapes">
+          <div
+            class="shape circle"
+            style="top: 20%; left: 10%; animation-delay: 0s"
+          ></div>
+          <div
+            class="shape square"
+            style="top: 60%; left: 20%; animation-delay: 5s"
+          ></div>
+          <div
+            class="shape triangle"
+            style="top: 30%; left: 80%; animation-delay: 2s"
+          ></div>
+          <div
+            class="shape circle"
+            style="top: 70%; left: 70%; animation-delay: 7s"
+          ></div>
+          <div
+            class="shape square"
+            style="top: 10%; left: 50%; animation-delay: 3s"
+          ></div>
+        </div>
+      </section>
+    </div>
 
     <!-- About Section -->
     <section id="about">
@@ -120,11 +125,11 @@
             <div class="about-info">
               <div class="info-item">
                 <h4>Name</h4>
-                <p>Alex Chen</p>
+                <p>Shivam Sharma</p>
               </div>
               <div class="info-item">
                 <h4>Email</h4>
-                <p>alex.chen@example.com</p>
+                <p>sshivam0410@gmail.com</p>
               </div>
               <div class="info-item">
                 <h4>Study</h4>
@@ -132,7 +137,7 @@
               </div>
               <div class="info-item">
                 <h4>Location</h4>
-                <p>California, USA</p>
+                <p>Punjab, Paghwara</p>
               </div>
             </div>
             <a href="#" class="download-btn" id="resume-download">
@@ -775,9 +780,8 @@
         <polyline points="18 15 12 9 6 15"></polyline>
       </svg>
     </a>
-
+    <script src="herosection-autotype.js"></script>
     <script>
-      // Elements Animation
       const animateElements = () => {
         const elements = document.querySelectorAll(
           ".about-img, .about-text, .project-card, .skill-category h3, .skill-item, .achievement-card, .certificate-card"
