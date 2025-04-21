@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Portfolio</title>
+    <link rel="stylesheet" href="firstpagestyle.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <span style="--i: 1">S</span>
+            <span style="--i: 2">H</span>
+            <span style="--i: 3">I</span>
+            <span style="--i: 4">V</span>
+            <span style="--i: 5">A</span>
+            <span style="--i: 6">M</span>
+            <span style="--i: 7">S</span>
+            <span style="--i: 8">H</span>
+            <span style="--i: 3">A</span>
+            <span style="--i: 4">R</span>
+            <span style="--i: 5">M</span>
+            <span style="--i: 6">A</span>
+          </a>
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#achievements">Achievements</a>
+            <a href="#certificates">Certificates</a>
+          </div>
+          <div class="mobile-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!-- Hero Section will be loaded here -->
+    <div id="hero-section"></div>
+
+    <!-- Footer -->
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </a>
+
+    <script>
+      fetch("herosection.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("hero-section").innerHTML = data;
+        })
+        .catch((error) => {
+          console.error("Error loading hero section:", error);
+        });
+      const animateElements = () => {
+        const elements = document.querySelectorAll(
+          ".about-img, .about-text, .project-card, .skill-category h3, .skill-item, .achievement-card, .certificate-card"
+        );
+
+        elements.forEach((element) => {
+          const position = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.2;
+
+          if (position < screenPosition) {
+            element.classList.add("animate");
+          }
+        });
+      };
+
+      // Skill Bar Animation
+      const animateSkillBars = () => {
+        const skillBars = document.querySelectorAll(".skill-progress");
+
+        skillBars.forEach((bar) => {
+          const position = bar.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.2;
+
+          if (position < screenPosition) {
+            const width = bar.getAttribute("data-width");
+            bar.style.width = `${width}%`;
+          }
+        });
+      };
+
+      // Initialize Certificates Slider
+      const initSlider = () => {
+        const track = document.querySelector(".certificates-track");
+        const dots = document.querySelectorAll(".slider-dot");
+        const cards = document.querySelectorAll(".certificate-card");
+        const cardWidth = cards[0].offsetWidth + 30; // Adding gap
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            // Update active dot
+            document
+              .querySelector(".slider-dot.active")
+              .classList.remove("active");
+            dot.classList.add("active");
+
+            // Move track
+            track.style.transform = `translateX(-${cardWidth * index}px)`;
+          });
+        });
+      };
+
+      // Back to Top Button
+      const handleBackToTop = () => {
+        const backToTopBtn = document.querySelector(".back-to-top");
+
+        if (window.scrollY > 300) {
+          backToTopBtn.classList.add("active");
+        } else {
+          backToTopBtn.classList.remove("active");
+        }
+      };
+
+      // Resume Download
+      document
+        .getElementById("resume-download")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Create a temporary anchor element
+          const link = document.createElement("a");
+          link.href = "Shivam_CV_Updated(1).pdf"; // Replace with actual PDF path
+          link.download = "Your_Resume.pdf"; // Suggested filename
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+        });
+
+      // Mobile Menu Toggle
+      const mobileMenuBtn = document.querySelector(".mobile-menu");
+      mobileMenuBtn.addEventListener("click", function () {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.style.display =
+          navLinks.style.display === "flex" ? "none" : "flex";
+      });
+
+      // Event Listeners
+      window.addEventListener("scroll", () => {
+        animateElements();
+        animateSkillBars();
+        handleBackToTop();
+      });
+
+      window.addEventListener("load", () => {
+        animateElements();
+        animateSkillBars();
+        initSlider();
+      });
+    </script>
+  </body>
+</html>
