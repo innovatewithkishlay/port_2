@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shivam Portfolio</title>
+    <link rel="stylesheet" href="firstpagestyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav>
+          <a href="#" class="logo">
+            <span style="--i: 1">S</span>
+            <span style="--i: 2">S</span>
+            <span style="--i: 2">-</span>
+            <span style="--i: 3">P</span>
+            <span style="--i: 4">O</span>
+            <span style="--i: 5">R</span>
+            <span style="--i: 6">T</span>
+            <span style="--i: 7">F</span>
+            <span style="--i: 8">O</span>
+            <span style="--i: 3">L</span>
+            <span style="--i: 4">I</span>
+            <span style="--i: 5">O</span>
+          </a>
+          <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#certificates">Certificates</a>
+          </div>
+          <div class="mobile-menu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <div id="hero-section">
+      <section class="hero" id="home">
+        <div class="container">
+          <div class="hero-content">
+            <h1>Hi, I'm Shivam Sharma</h1>
+            <h2
+              id="typewriter"
+              style="
+                font-size: 3rem;
+                color: #333;
+                margin-top: 20px;
+                height: 80px;
+              "
+            ></h2>
+            <!-- Inline CSS for styling -->
+            <a href="#projects" class="hero-btn">Explore My Work</a>
+          </div>
+          <div class="hero-img"></div>
+        </div>
+        <div class="floating-shapes">
+          <div
+            class="shape circle"
+            style="top: 20%; left: 10%; animation-delay: 0s"
+          ></div>
+          <div
+            class="shape square"
+            style="top: 60%; left: 20%; animation-delay: 5s"
+          ></div>
+          <div
+            class="shape triangle"
+            style="top: 30%; left: 80%; animation-delay: 2s"
+          ></div>
+          <div
+            class="shape circle"
+            style="top: 70%; left: 70%; animation-delay: 7s"
+          ></div>
+          <div
+            class="shape square"
+            style="top: 10%; left: 50%; animation-delay: 3s"
+          ></div>
+        </div>
+      </section>
+    </div>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>About Me</h2>
+        </div>
+        <div class="about-content">
+          <div class="about-img">
+            <img src="portfolio.jpeg" alt="Alex Chen Profile" />
+          </div>
+          <div class="about-text">
+            <h3>Computer Science Student</h3>
+            <p>
+              I’m a third-year Computer Science and Engineering student at
+              Lovely Professional University with a keen focus on Artificial
+              Intelligence and Machine Learning. My journey began with building
+              basic programs in C++, eventually evolving into developing
+              intelligent ML applications using Python, TensorFlow, and
+              Scikit-learn.
+            </p>
+            <p>
+              Today, I’m passionate about creating practical AI-driven
+              solutions—ranging from emotion detection to medical diagnosis
+              models. I believe in continuous learning, leveraging real-world
+              projects, and pushing the limits of what's possible through data
+              and code.
+            </p>
+            <div class="about-info">
+              <div class="info-item">
+                <h4>Name</h4>
+                <p>Shivam Sharma</p>
+              </div>
+              <div class="info-item">
+                <h4>Email</h4>
+                <p>sshivam0410@gmail.com</p>
+              </div>
+              <div class="info-item">
+                <h4>Study</h4>
+                <p>Computer Science</p>
+              </div>
+              <div class="info-item">
+                <h4>Location</h4>
+                <p>Punjab, Paghwara</p>
+              </div>
+            </div>
+            <a
+              href="Shivam_CV1.pdf"
+              class="download-btn"
+              id="resume-download"
+              download
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="18"
+                height="18"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="7 10 12 15 17 10"></polyline>
+                <line x1="12" y1="15" x2="12" y2="3"></line>
+              </svg>
+              Download Resume
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Projects</h2>
+        </div>
+        <div class="projects-container">
+          <div class="project-card">
+            <div class="project-img">
+              <img src="chess.jpeg" alt="3D chess game" />
+            </div>
+            <div class="project-content">
+              <h3>3D Chess Game Development</h3>
+              <p>
+                Developed an interactive 3D chess game with realistic graphics
+                and smooth animations. Focused on game mechanics, environment
+                design, and user interaction for an immersive experience.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Blender</span>
+                <span class="tag">Unity</span>
+                <span class="tag">C#</span>
+                <span class="tag">Adobe Photoshop</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shivam04sharma/Game-Ready-3D-Models-Axe-Gun-Sword-Car-More"
+                  class="project-link"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img
+                src="Face_Emotion_Recognition_Project.webp"
+                alt="Emotion detection"
+              />
+            </div>
+            <div class="project-content">
+              <h3>Emotion Detection in Customer Reviews</h3>
+              <p>
+                Created a mobile application that uses machine learning to
+                analyze health metrics and provide personalized insights.
+              </p>
+              <div class="project-tags">
+                <span class="tag">AI & ML</span>
+                <span class="tag">Python</span>
+                <span class="tag"> Scikit-learn</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">TF-IDF</span>
+                <span class="tag">NLP</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shivam04sharma/Sentiment-Analysis-on-IMDb-Reviews-Using-NLP-and-Machine-Learning"
+                  class="project-link"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-img">
+              <img src="Gliomacertificate.jpg" alt="E-Learning Platform" />
+            </div>
+            <div class="project-content">
+              <h3>Glioma Grading Using Clinical and Mutation Features</h3>
+              <p>
+                Developed an ML model to classify Glioma tumor grades using
+                clinical and genetic data. Achieved 86% accuracy, aiding early
+                diagnosis and treatment planning in healthcare.
+              </p>
+              <div class="project-tags">
+                <span class="tag">NumPy</span>
+                <span class="tag">Seaborn</span>
+                <span class="tag">Scikit-learn</span>
+                <span class="tag"> Pandas</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shivam04sharma/Glioma-Grading-Clinical-and-Mutation-Features-AI-ML-"
+                  class="project-link"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img src="solmusic-1.jpg" alt="3D chess game" />
+            </div>
+            <div class="project-content">
+              <h3>Online Music Store Website</h3>
+              <p>
+                Responsive e-commerce interface for browsing, previewing, and
+                purchasing music.Built a user-friendly music store website with
+                dynamic layout and smooth navigation. Enabled music previews,
+                categorized albums, and modern UI for seamless user experience.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
+                <span class="tag">JavaScript</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shivam04sharma/-Online-Music-Store-Website"
+                  class="project-link"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img">
+              <img src="placementimage.jpg" alt="3D chess game" />
+            </div>
+            <div class="project-content">
+              <h3>Training and Placement Management System</h3>
+              <p>
+                Designed a C/C++ based system to support student career
+                development. Included resume building, interview prep, and
+                job-matching features to streamline placement processes.
+              </p>
+              <div class="project-tags">
+                <span class="tag">C</span>
+                <span class="tag">C++</span>
+                <span class="tag">Turbo</span>
+                <span class="tag">File handling</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Shivam04sharma/-Training-and-Placement-Management-System"
+                  class="project-link"
+                  >Code</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Skills</h2>
+        </div>
+        <div class="skills-container">
+          <div class="skill-category">
+            <h3>Programming Languages</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>Python</h4>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>Java</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>C++</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>C</h4>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Web Technologies</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>HTML</h4>
+                <span>90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="90"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>CSS</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>JavaScript</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>Sql</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3>Other Skills</h3>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>Machine Learning</h4>
+                <span>80%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="80"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>AWS</h4>
+                <span>75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="75"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>IOT</h4>
+                <span>70%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="70"></div>
+              </div>
+            </div>
+            <div class="skill-item">
+              <div class="skill-name">
+                <h4>Blender & Unity</h4>
+                <span>85%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-progress" data-width="85"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+      <div class="container">
+        <div class="section-title">
+          <h2>Certificates</h2>
+        </div>
+        <div class="certificates-slider">
+          <div class="certificates-track">
+            <div class="certificate-card">
+              <div class="certificate-img">
+                <img
+                  src="firstcertificate.jpeg"
+                  alt="Deep Learning Certificate"
+                />
+              </div>
+              <div class="certificate-content">
+                <h3>
+                  Unsupervised Learning, Recommenders, Reinforcement Learning
+                </h3>
+                <p>
+                  Unsupervised Learning finds hidden patterns in data without
+                  labels, Recommenders suggest personalized content, and
+                  Reinforcement Learning optimizes decision-making through
+                  rewards.
+                </p>
+                <div class="certificate-meta">
+                  <div class="certificate-issuer">
+                    <div class="certificate-issuer-logo">
+                      <img src="coursera.png" alt="Coursera" />
+                    </div>
+                    <span class="certificate-issuer-name">Coursera</span>
+                  </div>
+                  <span class="certificate-date">April 2023</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-img">
+                <img src="aws.jpeg" alt="AWS Certificate" />
+              </div>
+              <div class="certificate-content">
+                <h3>Aws Cloud Technical Essentials</h3>
+                <p>
+                  Introduces core AWS services, cloud concepts, security, and
+                  architecture fundamentals to build and manage cloud-based
+                  applications effectively.
+                </p>
+                <div class="certificate-meta">
+                  <div class="certificate-issuer">
+                    <div class="certificate-issuer-logo">
+                      <img src="awslogo.png" alt="AWS" />
+                    </div>
+                    <span class="certificate-issuer-name"
+                      >Amazon Web Services</span
+                    >
+                  </div>
+                  <span class="certificate-date">January 2024</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-img">
+                <img src="nptelwalicourse.jpeg" alt="Full Stack Certificate" />
+              </div>
+              <div class="certificate-content">
+                <h3>NPTEL</h3>
+                <p>
+                  The NPTEL course "Design & Implementation of Human-Computer
+                  Interfaces," offered by IIT Guwahati, focuses on creating
+                  user-centric interactive systems. It covers usability
+                  engineering, requirement analysis, interface design,
+                  prototyping, implementation, and evaluation, aiming to enhance
+                  user experience.
+                </p>
+                <div class="certificate-meta">
+                  <div class="certificate-issuer">
+                    <div class="certificate-issuer-logo">
+                      <img src="nptel.jpg" alt="Udemy" />
+                    </div>
+                    <span class="certificate">NPTEL</span>
+                  </div>
+                  <span class="certificate-date">September 2022</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="certificate-card">
+              <div class="certificate-img">
+                <img
+                  src="boardinfintiycertificate.jpg"
+                  alt="UI/UX Certificate"
+                />
+              </div>
+              <div class="certificate-content">
+                <h3>Machine Learning & Al</h3>
+                <p>
+                  The Board Infinity Machine Learning & AI course offers
+                  hands-on training in Python, ML algorithms, deep learning, and
+                  real-world projects.
+                </p>
+                <div class="certificate-meta">
+                  <div class="certificate-issuer">
+                    <div class="certificate-issuer-logo">
+                      <img src="boardlogo.png" alt="Google" />
+                    </div>
+                    <span class="certificate-issuer-name">Board infinity</span>
+                  </div>
+                  <span class="certificate-date">July 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-img">
+                <img src="cppcertificacte.jpg" alt="UI/UX Certificate" />
+              </div>
+              <div class="certificate-content">
+                <h3>C++</h3>
+                <p>
+                  Coursera’s "Programming in C++: A Hands-on Introduction"
+                  teaches core concepts like loops, functions, and OOP through
+                  interactive, project-based learning. It helps learners build
+                  real C++ programs directly in the browser, making it
+                  accessible and beginner-friendly.
+                </p>
+                <div class="certificate-meta">
+                  <div class="certificate-issuer">
+                    <div class="certificate-issuer-logo">
+                      <img src="coursera.png" alt="Google" />
+                    </div>
+                    <span class="certificate-issuer-name">Coursera</span>
+                  </div>
+                  <span class="certificate-date">July 2023</span>
+                </div>
+              </div>
+            </div>
+            <div class="certificate-card">
+              <div class="certificate-img">
+                <img src="algocertificate.jpg" alt="UI/UX Certificate" />
+              </div>
+              <div class="certificate-content">
+                <h3>Algorithms</h3>
+                <p>
+                  Coursera’s Algorithms Specialization teaches problem-solving,
+                  sorting, graph algorithms, and data structures, with
+                  real-world coding assignments and conceptual depth. It
+                  prepares learners for technical interviews and advanced
+                  studies in computer science.
+                </p>
+                <div class="certificate-meta">
+                  <div class="certificate-issuer">
+                    <div class="certificate-issuer-logo">
+                      <img src="coursera.png" alt="Google" />
+                    </div>
+                    <span class="certificate-issuer-name">Coursera</span>
+                  </div>
+                  <span class="certificate-date">July 2023</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-nav">
+            <div class="slider-dot active"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+            <div class="slider-dot"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-col">
+            <h3>Shivam Sharma</h3>
+            <p>
+              A passionate Computer Science student with a focus on creating
+              innovative solutions through technology.
+            </p>
+            <div class="social-links">
+              <a href="https://www.facebook.com/login.php/" class="social-link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  ></path>
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/shivam04sharma/"
+                class="social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                  ></path>
+                  <rect x="2" y="9" width="4" height="12"></rect>
+                  <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+              </a>
+              <a
+                href="https://github.com/Shivam04sharma"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="M12 .5C5.73.5.5 5.73.5 12.02c0 5.1 3.29 9.43 7.86 10.96.58.1.79-.25.79-.56v-2.01c-3.2.7-3.87-1.55-3.87-1.55-.52-1.32-1.28-1.67-1.28-1.67-1.05-.72.08-.7.08-.7 1.17.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.74.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.3 1.19-3.12-.12-.29-.52-1.47.12-3.05 0 0 .97-.31 3.17 1.2a11.02 11.02 0 0 1 5.77 0c2.2-1.51 3.17-1.2 3.17-1.2.64 1.58.24 2.76.12 3.05.74.82 1.18 1.86 1.18 3.12 0 4.43-2.7 5.4-5.27 5.68.41.35.77 1.03.77 2.08v3.08c0 .31.2.67.8.56A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"
+                  /></svg
+              ></a>
+
+              <a
+                href="https://www.instagram.com/accounts/login/?hl=en"
+                class="social-link"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path
+                    d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                  ></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer-col">
+            <h3>Quick Links</h3>
+            <ul class="footer-links">
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#certificates">Certificates</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3>Contact Me</h3>
+            <div class="footer-contact">
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                +91 7983796254
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                sshivam0410@gmail.com
+              </p>
+              <p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                Phagwara, Punjab, INDIA
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy;2025 Shivam Sharma. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+      >
+        <polyline points="18 15 12 9 6 15"></polyline>
+      </svg>
+    </a>
+    <script src="herosection-autotype.js"></script>
+    <script>
+      const animateElements = () => {
+        const elements = document.querySelectorAll(
+          ".about-img, .about-text, .project-card, .skill-category h3, .skill-item, .certificate-card"
+        );
+
+        elements.forEach((element) => {
+          const position = element.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.2;
+
+          if (position < screenPosition) {
+            element.classList.add("animate");
+          }
+        });
+      };
+
+      // Skill Bar Animation
+      const animateSkillBars = () => {
+        const skillBars = document.querySelectorAll(".skill-progress");
+
+        skillBars.forEach((bar) => {
+          const position = bar.getBoundingClientRect().top;
+          const screenPosition = window.innerHeight / 1.2;
+
+          if (position < screenPosition) {
+            const width = bar.getAttribute("data-width");
+            bar.style.width = `${width}%`;
+          }
+        });
+      };
+
+      // Initialize Certificates Slider
+      const initSlider = () => {
+        const track = document.querySelector(".certificates-track");
+        const dots = document.querySelectorAll(".slider-dot");
+        const cards = document.querySelectorAll(".certificate-card");
+
+        if (!track || cards.length === 0) return;
+
+        const cardWidth = cards[0].offsetWidth + 30; // Adding gap
+
+        dots.forEach((dot, index) => {
+          dot.addEventListener("click", () => {
+            document
+              .querySelector(".slider-dot.active")
+              ?.classList.remove("active");
+            dot.classList.add("active");
+            track.style.transform = `translateX(-${cardWidth * index}px)`;
+          });
+        });
+      };
+
+      // Back to Top Button
+      const handleBackToTop = () => {
+        const backToTopBtn = document.querySelector(".back-to-top");
+
+        if (backToTopBtn) {
+          if (window.scrollY > 300) {
+            backToTopBtn.classList.add("active");
+          } else {
+            backToTopBtn.classList.remove("active");
+          }
+        }
+      };
+
+      // Resume Download
+      const setupResumeDownload = () => {
+        const downloadBtn = document.getElementById("resume-download");
+
+        if (downloadBtn) {
+          downloadBtn.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            const link = document.createElement("a");
+            link.href = "Shivam_CV1.pdf"; // Make sure this file exists in the same folder
+            link.download = "Shivam_CV1.pdf";
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+          });
+        }
+      };
+
+      // Mobile Menu Toggle
+      const setupMobileMenu = () => {
+        const mobileMenuBtn = document.querySelector(".mobile-menu");
+        const navLinks = document.querySelector(".nav-links");
+
+        if (mobileMenuBtn && navLinks) {
+          mobileMenuBtn.addEventListener("click", function () {
+            navLinks.style.display =
+              navLinks.style.display === "flex" ? "none" : "flex";
+          });
+        }
+      };
+
+      window.addEventListener("scroll", () => {
+        animateElements();
+        animateSkillBars();
+        handleBackToTop();
+      });
+
+      window.addEventListener("load", () => {
+        animateElements();
+        animateSkillBars();
+        initSlider();
+        setupResumeDownload();
+        setupMobileMenu();
+      });
+    </script>
+  </body>
+</html>
