@@ -996,3 +996,19 @@ footer {
     gap: 30px;
   }
 }
+
+.view-certificate-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0073b1;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.view-certificate-btn:hover {
+  background-color: #005582;
+}
